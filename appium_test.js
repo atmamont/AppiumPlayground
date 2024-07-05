@@ -1,7 +1,7 @@
 const {remote} = require('webdriverio');
 
 const capabilities = {
-  platformName: 'iOS',
+  'platformName': 'iOS',
   'appium:automationName': 'xcuitest',
   'appium:deviceName': 'iPhone 15',
   'appium:appPackage': 'com.adyen.mystore',
