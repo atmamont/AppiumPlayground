@@ -30,7 +30,7 @@ exports.config = {
         'appium:platformName': 'iOS',
         'appium:deviceName': 'iPhone 15',
         'appium:automationName': 'xcuitest',
-        'appium:appPackage': 'com.adyen.mystore',
+        'appium:bundleId': 'com.adyen.mystore',
     }],
     //
     // Additional list of node arguments to use when starting child processes
@@ -56,7 +56,7 @@ exports.config = {
     baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitForXXX commands.
-    waitforTimeout: 1000,
+    waitforTimeout: 1500,
     //
     // Add files to watch (e.g. application code or page objects) when running `wdio` command
     // with `--watch` flag. Globbing is supported.
