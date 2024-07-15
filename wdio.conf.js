@@ -1,3 +1,5 @@
+const path = require('path');
+
 exports.config = {
     runner: 'local',
     hostname: 'localhost',
@@ -28,9 +30,11 @@ exports.config = {
     //
     capabilities: [{
         'appium:platformName': 'iOS',
-        'appium:deviceName': 'iPhone 15',
+        'appium:deviceName': 'iPhone 15 Pro',
+        'appium:platformVersion': '17.0',
         'appium:automationName': 'xcuitest',
-        'appium:bundleId': 'com.adyen.mystore',
+        // 'appium:bundleId': 'com.adyen.mystore',
+        'appium:app': path.join(process.cwd(), './app/MyStore.app')
     }],
     //
     // Additional list of node arguments to use when starting child processes
